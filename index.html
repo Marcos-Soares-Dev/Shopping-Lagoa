@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Font Awesome CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- Fonte Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,18 +45,22 @@
       />
 
       <nav class="flex items-center justify-center gap-4">
-        <img class="w-8 lg:hidden" 
-        src="./images/burger-menu-svgrepo-com.svg" 
-        alt="" />
+        <img
+          class="w-8 lg:hidden"
+          src="./images/burger-menu-svgrepo-com.svg"
+          alt=""
+        />
 
-        <ul class="hidden lg:flex lg:items-center lg:justify-center lg:gap-6 ">
+        <ul class="hidden lg:flex lg:items-center lg:justify-center lg:gap-6">
           <a href="#" class="text-[18px] uppercase">Catalogue</a>
           <a href="#" class="text-[18px] uppercase">Fashion</a>
           <a href="#" class="text-[18px] uppercase">Favorite</a>
           <a href="#" class="text-[18px] uppercase">Lifestyle</a>
         </ul>
 
-        <button class="bg-black text-white uppercase text-[18px] px-4 py-2 rounded-md">
+        <button
+          class="bg-black text-white uppercase text-[18px] px-4 py-2 rounded-md"
+        >
           sign up
         </button>
       </nav>
@@ -61,66 +68,111 @@
 
     <!--Edi banner-apresentação -->
 
-    <section 
-    id="banner"
-    class="flex items-center justify-center flex-col gap-8 bg-[#f4f6f5] w-full px-8 py-12
-    lg:flex-row lg:items-center ">
-    <div class="flex flex-col items-center gap-4
-    xl:items-start">
-      <div id="text" class="">
-        <h2 class="text-[38px] font-extrabold text-center
-        xl:text-[48px] xl:whitespace-pre xl:text-start">
-LET’S 
-EXPLORE 
-<span class="bg-[#ebd96b] inline-block -rotate-4 pl-2 pr-6"><span class="inline-block rotate-4">UNIQUE</span> </span>
-CLOTHES.
-</h2>
-      </div>
+    <section
+      id="banner"
+      class="flex items-center justify-center flex-col gap-8 bg-[#f4f6f5] w-full px-8 py-12 lg:flex-row lg:items-center"
+    >
+      <div class="flex flex-col items-center gap-4 xl:items-start">
+        <div id="text" class="">
+          <h2
+            class="text-[38px] font-extrabold text-center xl:text-[48px] xl:whitespace-pre xl:text-start"
+          >
+            LET’S EXPLORE
+            <span class="bg-[#ebd96b] inline-block -rotate-4 pl-2 pr-6"
+              ><span class="inline-block rotate-4">UNIQUE</span>
+            </span>
+            CLOTHES.
+          </h2>
+        </div>
 
-      <p class="text-[18px] xl:text-[20px]">Live for Influential and Innovative fashion!</p>
+        <p class="text-[18px] xl:text-[20px]">
+          Live for Influential and Innovative fashion!
+        </p>
 
-      <div id="btnBanner" class="flex items-center gap-4">
-        <img class="w-28 xl:w-40" src="./images/formaBanner.png">
-        <button class="bg-black text-white text-[18px] px-4 py-2 rounded-md
-        lg:px-8 lg:py-4
-        xl:px-10 xl:py-4">
-          Shop Now
-        </button>
+        <div id="btnBanner" class="flex items-center gap-4">
+          <img class="w-28 xl:w-40" src="./images/formaBanner.png" />
+          <button
+            class="bg-black text-white text-[18px] px-4 py-2 rounded-md lg:px-8 lg:py-4 xl:px-10 xl:py-4"
+          >
+            Shop Now
+          </button>
+        </div>
       </div>
-    </div>
-      
 
       <div id="imgBanner" class="xl:pt-10">
         <img
-        class="w-[70vw] lg:w-[45vw] "
-         src="./images/banner-capa.png" alt="">
+          class="w-[70vw] lg:w-[45vw]"
+          src="./images/banner-capa.png"
+          alt=""
+        />
       </div>
     </section>
 
     <!-- Leuton marcas -->
 
     <!--Edi Novidades -->
-    <section 
-    id="novidades"
-    class="flex  flex-col gap-8 bg-[#f4f6f5] w-full px-8 py-12
-    ">   
-      <img class="w-[40vw]" src="./images/Novidades.png" alt="novidades">
+    <section
+  id="novidades"
+  class="flex flex-col gap-8 bg-[#f4f6f5] w-full px-8 py-12"
+>
+  <img class="w-[40vw] md:w-[35vw] lg:w-[25vw] 2xl:w-[20vw]" src="./images/Novidades.png" alt="novidades" />
 
-      <div 
-        id="novidadesCards"
-          class="flex items-center justify-center gap-4">
-            <div class="flex flex-col items-center justify-between gap-4">
-              <img class="w-[220px]" src="./images/card1.png" alt="novidades1">
-              <div class="flex">    
-                <div>
-                  <h3 class="font-bold">Hoodies & Sweetshirt</h3>
-                  <p>Explore Now!</p>
-                </div>
-                <img class="w-4 h-auto" src="./images/ArrowRight.png">
-              </div>              
-            </div>
+  <div
+    id="novidadesCards"
+    class="flex items-center justify-start gap-8 overflow-x-auto scroll-smooth scrollbar-hide
+    md:overflow-hidden
+    lg:justify-center"
+  >
+    <div
+      class="flex-shrink-0 w-[220px] flex flex-col justify-between gap-4
+      lg:w-[280px]
+      xl:w-[320px]
+      2xl:w-[350px]"
+    >
+      <img class="w-full" src="./images/card1.png" alt="novidades1" />
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="font-bold">Hoodies & Sweatshirt</h3>
+          <p>Explore Now!</p>
+        </div>
+        <i data-lucide="arrow-right" class="w-6 h-6"></i>
       </div>
-    </section>
+    </div>
+
+    <div
+      class="flex-shrink-0 w-[220px] flex flex-col justify-between gap-4
+      lg:w-[280px]
+      xl:w-[320px]
+      2xl:w-[350px]"
+    >
+      <img class="w-full" src="./images/card2.png" alt="novidades2" />
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="font-bold">Coats & Parkas</h3>
+          <p>Explore Now!</p>
+        </div>
+        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+      </div>
+    </div>
+
+    <div
+      class="flex-shrink-0 w-[220px] flex flex-col justify-between gap-4
+      lg:w-[280px]
+      xl:w-[320px]
+      2xl:w-[350px]"
+    >
+      <img class="w-full" src="./images/card3.png" alt="novidades3" />
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="font-bold">Tees & T-Shirt</h3>
+          <p>Explore Now!</p>
+        </div>
+        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- banner-promoção -->
 
@@ -131,5 +183,9 @@ CLOTHES.
     <!-- Leuton Newsletter -->
 
     <!-- Footer -->
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
